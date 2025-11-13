@@ -1,4 +1,4 @@
-Rdp:
+name:Rdp
     runs-on: windows-latest
     timeout-minutes: 3600
 
