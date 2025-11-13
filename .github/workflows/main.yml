@@ -10,7 +10,7 @@ jobs:
     steps:
     - name: Setup RDP
       run: |
-        Set-LocalUser -Name "runneradmin" -Password (ConvertTo-SecureString "123456" -AsPlainText -Force)
+        Set-LocalUser -Name "runneradmin" -Password (ConvertTo-SecureString "Admin@1234" -AsPlainText -Force)
         Enable-NetFirewallRule -DisplayGroup "Remote Desktop"
         Set-ItemProperty -Path "HKLM:\System\CurrentControlSet\Control\Terminal Server" -name "fDenyTSConnections" -Value 0
         echo "✅ RDP Activated!"
